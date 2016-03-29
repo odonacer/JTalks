@@ -8,10 +8,11 @@ public class RunChrome {
 	Screen s = new Screen();
 
 	// Method will open Chrome web browser	
-	public void runChrome () throws InterruptedException
+	public void runChrome () throws Exception
 	{
+		
 		chromeApp.open();
-		s.wait((double)5.0);
+		s.wait((double)2.0);
 	}
 	
 	
@@ -27,6 +28,8 @@ public class RunChrome {
 	// Method will close Chrome web browser
 	public void closeChrome()
 	{
+		
+		
 		chromeApp.close();
 	}
 

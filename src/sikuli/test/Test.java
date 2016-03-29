@@ -8,6 +8,7 @@ public class Test {
 		
 		RunFirefox runFF = new RunFirefox();
 		MainPageTest pageTest = new MainPageTest();
+		Screen s = new Screen();
 		runFF.runFirefox();
 		runFF.openWebPage("http://qa.jtalks.org/jcommune");
 		
@@ -16,8 +17,9 @@ public class Test {
 		runFF.closeFirefox();
 		
 		RunChrome runC = new RunChrome();
+		
 		runC.runChrome();
-		runC.openWebPage("google.com");
+		runC.openWebPage("http://google.com");
 		
 		runC.closeChrome();
 		
